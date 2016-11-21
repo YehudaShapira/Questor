@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Questor.Inquiry.Data
 {
-    public enum AnswerType
-    {
-        Yes, No, Time, Place, Reason, WrongAssumption, NotKnown
-    }
+	public enum AnswerType
+	{
+		Yes, No, Time, Place, Reason, People, WrongAssumption, NotKnown
+	}
 }

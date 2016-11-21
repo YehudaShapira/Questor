@@ -36,6 +36,64 @@ namespace Questor.Inquiry.Data
 
 		public Answer Answer(Question question)
 		{
+			if (IsYesNoQuestion(question))
+			{
+				return AnswerYesOrNo(question);
+			}
+			else if (question.QuestionType == QuestionType.WhoDid)
+			{
+				var who = new List<string>();
+
+				IEnumerable<Information> relevantInfo;
+				relevantInfo = events.Where(x =>
+					x.Verb == question.Verb &&
+					x.Object == question.Object);
+
+				var did = relevantInfo.Where(x => x.IsTrue);
+				var didNot = relevantInfo.Where(x => !x.IsTrue);
+
+				foreach (var d in did)
+				{
+					var contradicting = didNot.FirstOrDefault(n => n.Subject.Equals(d.Subject, StringComparison.InvariantCultureIgnoreCase));
+					if (contradicting == null ||
+						d.Metadata.BeliefStrength > contradicting.Metadata.BeliefStrength)
+					{
+						who.Add(d.Subject);
+					}
+				}
+
+				if (relevantInfo.Any())
+				{
+					// NO NO NO!!! We need to remove contradicting
+					return new Answer
+					{
+						AnswerType = AnswerType.People,
+						People = who
+					};
+				}
+				else
+				{
+					return new Answer { AnswerType = AnswerType.NotKnown };
+				}
+			}
+			else
+			{
+				throw new NotImplementedException();
+			}
+		}
+
+		private bool IsYesNoQuestion(Question question)
+		{
+			return
+				question.QuestionType == QuestionType.AreYou ||
+				question.QuestionType == QuestionType.Did ||
+				question.QuestionType == QuestionType.Does ||
+				question.QuestionType == QuestionType.DoYou ||
+				question.QuestionType == QuestionType.Is;
+		}
+
+		private Answer AnswerYesOrNo(Question question)
+		{
 			IEnumerable<Information> relevantInfo;
 
 			switch (question.QuestionType)
