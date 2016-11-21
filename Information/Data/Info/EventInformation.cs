@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Questor.Inquiry.Data.Info
 {
+	/// <summary>
+	/// [Subject] [verb] [object] at [time] in [place] because [reason]
+	/// </summary>
 	public class EventInformation : Information
 	{
 		public string Verb { get; set; }

@@ -62,9 +62,8 @@ namespace Questor.Inquiry.Data
 					}
 				}
 
-				if (relevantInfo.Any())
+				if (who.Any())
 				{
-					// NO NO NO!!! We need to remove contradicting
 					return new Answer
 					{
 						AnswerType = AnswerType.People,

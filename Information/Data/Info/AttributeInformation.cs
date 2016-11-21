@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Questor.Inquiry.Data.Info
 {
+	/// <summary>
+	/// [Subject] is [adjective]
+	/// </summary>
 	public class AttributeInformation : Information
 	{
 		public string Adjective { get; set; }
