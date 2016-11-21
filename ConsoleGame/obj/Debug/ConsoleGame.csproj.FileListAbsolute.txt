@@ -1,1 +1,10 @@
-C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\ConsoleGame.exe.config
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.ConsoleGame.exe.config
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.ConsoleGame.exe
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.ConsoleGame.pdb
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.Characters.dll
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.Inquiry.dll
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.Characters.pdb
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\bin\Debug\Questor.Inquiry.pdb
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\obj\Debug\ConsoleGame.csprojResolveAssemblyReference.cache
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\obj\Debug\Questor.ConsoleGame.exe
+C:\Users\Yehuda\Source\Workspaces\QuestionPlayground\QuestionPlayground\ConsoleGame\obj\Debug\Questor.ConsoleGame.pdb

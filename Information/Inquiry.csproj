@@ -7,8 +7,8 @@
     <ProjectGuid>{814BDCE1-3178-4588-8AD7-7BF338ADA09D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Inquiry</RootNamespace>
-    <AssemblyName>Inquiry</AssemblyName>
+    <RootNamespace>Questor.Inquiry</RootNamespace>
+    <AssemblyName>Questor.Inquiry</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -48,7 +48,6 @@
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\AnswerType.cs" />
     <Compile Include="Data\BeliefResponse.cs" />
-    <Compile Include="Data\BeliefSetGenerator.cs" />
     <Compile Include="Data\Info\AttributeInformation.cs" />
     <Compile Include="Data\BeliefSet.cs" />
     <Compile Include="Data\Info\EventInformation.cs" />

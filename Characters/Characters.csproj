@@ -7,8 +7,8 @@
     <ProjectGuid>{CDCCF25B-1E75-4DB7-9397-9FE06BEF1487}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Characters</RootNamespace>
-    <AssemblyName>Characters</AssemblyName>
+    <RootNamespace>Questor.Characters</RootNamespace>
+    <AssemblyName>Questor.Characters</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
